@@ -1,0 +1,58 @@
+aid: opendata-nhs-scot
+name: NHS Scotland Open Data
+description: >-
+  NHS Scotland Open Data is a government agency open-data portal for United Kingdom running CKAN.
+  It exposes the CKAN catalog API, a standardized machine-readable interface over approximately 104 datasets,
+  supporting programmatic dataset search, metadata retrieval, and resource access. Because it runs CKAN, it shares a
+  consistent API surface with every other CKAN portal, making it uniformly harvestable and integrable.
+kind: government
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/opendata-nhs-scot/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - CKAN
+  - Data Catalog
+  - DCAT
+  - Government Data
+  - Government Agency
+  - United Kingdom
+created: '2026-06-04'
+modified: '2026-06-04'
+specificationVersion: '0.19'
+apis:
+  - aid: opendata-nhs-scot:catalog
+    name: NHS Scotland Open Data CKAN Action API
+    description: >-
+      CKAN Action API for NHS Scotland Open Data, a consistent JSON-over-HTTP interface over a catalog of 104 datasets. Standard actions include package_search, package_show, package_list, organization_list, group_list, tag_list, and resource_search; datastore_search is available where the DataStore extension is enabled. Base URL https://www.opendata.nhs.scot/api/3/action/.
+    humanURL: https://www.opendata.nhs.scot
+    baseURL: https://www.opendata.nhs.scot/api/3/action
+    tags:
+      - CKAN
+      - Action API
+      - Open Data
+      - Catalog
+      - REST
+      - JSON
+    properties:
+      - type: Documentation
+        url: https://docs.ckan.org/en/latest/api/
+      - type: Website
+        url: https://www.opendata.nhs.scot
+      - type: x-api-endpoint
+        url: https://www.opendata.nhs.scot/api/3/action/status_show
+common:
+  - type: Website
+    url: https://www.opendata.nhs.scot
+  - type: Documentation
+    url: https://docs.ckan.org/en/latest/api/
+  - type: Plans
+    url: plans/opendata-nhs-scot-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/opendata-nhs-scot-rate-limits.yml
+  - type: FinOps
+    url: finops/opendata-nhs-scot-finops.yml
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
